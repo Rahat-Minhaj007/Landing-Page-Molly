@@ -10,13 +10,11 @@
     font-weight: bold;
 }
 
-nav {
+.header-navigation nav {
     font-size: 0.9rem;
-    position: sticky;
-    top: 0.25rem;
 }
 
-nav ul {
+.header-navigation nav ul {
     list-style-type: none;
     margin: 0;
     padding: 1.2rem;
@@ -25,10 +23,41 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li {
+.header-navigation nav ul li {
     cursor: pointer;
     padding: 0rem 1.8rem;
     text-align: center;
+}
+
+.portfolio-nav {
+    color: grey;
+    font-weight: bold;
+}
+
+.portfolio-nav nav {
+    font-size: 0.9rem;
+}
+
+.portfolio-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-nav nav ul li {
+    cursor: pointer;
+    padding: 0rem 1.8rem;
+    text-align: center;
+}
+
+.portfolio-nav nav ul li:hover {
+    background-color: #ffeb34;
+    border-radius: 25%;
+    padding: 10px;
+    display: inline-block;
 }
 
 .header-main {
@@ -58,11 +87,11 @@ nav ul li {
 }
 
 .header-main-first-dot {
-    color: yellow;
+    color: #ffeb34;
 }
 
 #molly {
-    color: yellow;
+    color: #ffeb34;
     font-weight: bold;
 }
 
@@ -148,7 +177,7 @@ nav ul li {
 }
 
 .service-icon {
-    background-color: #ffeb34;
+    background-color: #FFE501;
     color: #fff;
     margin: 0px 10px;
     padding: 0px 20px;
@@ -161,6 +190,104 @@ nav ul li {
 
 .service-text {
     padding-top: 35px;
+}
+
+.make-web-design {
+    background: linear-gradient(rgba(59, 74, 90, 0.342), #344750), url("../image/banner3.gif");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px
+}
+
+.make-web-design-image {
+    width: 500px;
+    height: 700px;
+}
+
+.make-web-design h1 {
+    color: #FFE501;
+}
+
+.make-web-design p {
+    color: #fff;
+}
+
+.web-design-point-text {
+    color: #fff;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.get-started {
+    background: linear-gradient(#FFE501, #FFE501);
+    height: 12vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.get-started-btn a {
+    width: 150px;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #FFE501;
+    margin: 0px 10px;
+    padding: 12px 5px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text-plus {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0px 9px;
+}
+
+.portfolio {
+    padding: 80px 0px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    color: #344750;
+    font-size: 70px;
+    text-decoration-line: underline;
+    text-decoration-color: #344750;
+    text-decoration-style: solid;
+    text-underline-offset: 30px;
+}
+
+#portfolio-header-paragraph {
+    color: #344750;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 300px;
+    padding-top: 30px;
+}
+
+.portfolio-image img {
+    height: 330px;
+    width: 400px;
+    padding: 15px 15px;
 }
 
 @media all and (max-width:400px) {
@@ -196,5 +323,13 @@ nav ul li {
         position: absolute;
         left: 1200px;
         top: 85px;
+    }
+    .portfolio-images {
+        padding: 0px 0px;
+    }
+    .portfolio-image img {
+        height: 330px;
+        width: 330px;
+        padding: 15px 15px;
     }
 }
